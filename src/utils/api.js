@@ -10,11 +10,11 @@ const headers = {
 
 /**
  * fetchTMDBData from TMDB API as per URL and Params
- * @param {url} url provided when call the function to fetch any data
+ * @param {url} url provided when call the function to fetch any data like /movie/popular
  * @param {*} params provided when call the function to fetch and filter data
  * @returns data / error
  */
-export const fetchTMDBData = async (url, params) => {
+export const fetchDataFromApi = async (url, params) => {
       try {
             const { data } = await axios.get(BASE_URL + url, {
                   headers,
